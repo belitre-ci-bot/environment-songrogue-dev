@@ -1,0 +1,28 @@
+jenkins-x-platform:
+  PipelineSecrets:
+    DockerConfig: |-
+      {
+          "credHelpers": {
+              "gcr.io": "gcr",
+              "us.gcr.io": "gcr",
+              "eu.gcr.io": "gcr",
+              "asia.gcr.io": "gcr",
+              "staging-k8s.gcr.io": "gcr"
+          }
+      }
+  chartmuseum:
+    enabled: false
+  chartmuseumServiceLink:
+    enabled: false
+  docker-registry:
+    enabled: false
+  monocular:
+    enabled: false
+  nexus:
+    enabled: false
+  nexusServiceLink:
+    enabled: false
+  pipelinecontroller:
+    enabled: true
+  postinstalljob:
+    enabled: "true"
