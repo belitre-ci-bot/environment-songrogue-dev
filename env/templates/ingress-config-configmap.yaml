@@ -1,11 +1,11 @@
 apiVersion: v1
 data:
   clusterissuer: "false"
-  domain: jx.coolcluster.belitre.com
+  domain: coolcluster.belitre.com
   email: ""
   exposer: Ingress
-  issuer: ""
-  tls: "false"
+  issuer: "letsencrypt-staging"
+  tls: "true"
   urltemplate: ""
 kind: ConfigMap
 metadata:
